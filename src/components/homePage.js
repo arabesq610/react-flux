@@ -4,8 +4,7 @@ var Home = React.createClass({
     render: function () {
         return (
             <div className="jumbotron">
-                <h1>Hello</h1>
-                <p>Awesome paragraph</p>
+                <h1>Home</h1>
             </div>
         );
     }

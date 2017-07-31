@@ -1,9 +1,10 @@
 (function (_window) {
     'use strict';
-    var $, jQuery, React, Home, About, App;
+    var $, jQuery, React, Header, Home, About, App;
 
     $ = jQuery = require('jquery');
     React = require('react');
+    Header = require('./components/common/header');
     Home = require('./components/homePage');
     About = require('./components/about/aboutPage');
     App = React.createClass({
@@ -19,6 +20,7 @@
             }
             return (
                 <div>
+                    <Header/>
                     <Child/>
                 </div>
             );
