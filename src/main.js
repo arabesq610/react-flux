@@ -1,18 +1,23 @@
 (function (_window) {
     'use strict';
-    var $, jQuery, React, Header, Home, About, App;
+    var $, jQuery, React, Header, Home, About, Authors, App;
 
     $ = jQuery = require('jquery');
     React = require('react');
     Header = require('./components/common/header');
     Home = require('./components/homePage');
     About = require('./components/about/aboutPage');
+    Authors = require('./components/authors/authorPage.js');
+
     App = React.createClass({
         render: function () {
             var Child;
             switch (this.props.route) {
                 case 'about':
                     Child = About;
+                    break;
+                case 'authors':
+                    Child = Authors;
                     break;
                 default:
                     Child = Home;
